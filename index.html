@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Tibia: Reborn of Hero</title>
+  </head>
+  <body
+    class="my-5 w-11/12 mx-auto flex flex-col flex-1 justify-between border-4 border-yellow-500 px-10 p-8 bg-[url('https://i.pinimg.com/564x/7d/aa/be/7daabea4fbe8bf9f648250525a3555ff.jpg')] rounded-sm"
+  >
+    <div class="bg-blue-800 p-2 border-2 border-yellow-500 rounded-md mb-5">
+      <h1 class="text-2xl text-center font-serif text-yellow-500 shadow-md">
+        Tibia: <br />
+        Reborn of Hero
+      </h1>
+    </div>
+
+    <div
+      class="fightarea flex flex-1 flex-col md:flex-row w-full rounded-md mb-5 shadow-md gap-2"
+    >
+      <div
+        class="pb-10 flex border border-gray-400 py-5 px-4 w-full shadow-md rounded-md bg-blue-100"
+      >
+        <div id="char" class="flex flex-col w-10/12">
+          <div class="lifebar w-full h-3 border border-gray-700 rounded-md">
+            <div class="bar bg-red-400 h-3 border-5 rounded-md"></div>
+          </div>
+          <strong class="name font-bold my-3 text-gray-950">--</strong>
+          <div>
+            <button
+              class="attackButton h-9 w-20 bg-red-500 rounded-md shadow-sm text-white"
+            >
+              Atacar
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="pb-10 flex border border-gray-400 py-5 px-4 w-full shadow-md rounded-md bg-red-50"
+      >
+        <div id="monster" class="flex flex-col w-10/12">
+          <div class="lifebar w-full h-3 border border-gray-700 rounded-md">
+            <div class="bar bg-red-400 h-3 border-5 rounded-md"></div>
+          </div>
+          <strong class="name font-bold my-3 text-gray-950">--</strong>
+          <div>
+            <button
+              class="attackButton h-9 w-20 bg-red-500 rounded-md shadow-sm text-white"
+            >
+              Atacar
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <ul
+      class="log flex flex-col gap-2 p-5 border-dashed border-2 rounded-md border-white-600 overflow-y-scroll h-80 w-full bg-gray-950 text-white text-xs"
+    ></ul>
+
+    <script src="assets/functions.js"></script>
+    <script src="assets/script.js"></script>
+  </body>
+</html>
